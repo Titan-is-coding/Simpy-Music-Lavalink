@@ -20,8 +20,10 @@ bot.status({
 //Variables
 bot.variables({
 Status1: "2",
+//this is our beta bot prefix
 Prefix:"<",
 Color:"RED",
+//Dont change anything here
 rpsvar:"",
 status:"",
 badges:"",
@@ -42,6 +44,7 @@ bot.command ({
   nonPrefixed: true
 })
 
+//when our bot joins a server
 bot.guildJoinCommand({
 channel: "917943550237372416",
 code: `
@@ -54,6 +57,7 @@ $color[1;RANDOM]`
 })
 bot.onGuildJoin()
 
+//when our bot leaves any server
 bot.guildLeaveCommand({
 channel: "917943572588818523",
 code: `
@@ -79,7 +83,7 @@ bot.readyCommand({
     $log[Ready on $userTag[$clientID]]`
 })
 
-
+//music stuffs dont change
 const Lavalink = new aoijs.Lavalink(bot);
 Lavalink.addNode({
  url: "lava.link:80",
