@@ -1,7 +1,7 @@
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-token: "", //Discord Bot Token
+token: "ODMzOTEyMzM2NDM0NTkzODYy.YH5PYg.f5TB38TDcMGZ4T1-0mOzRhVWfB8", //Discord Bot Token
 prefix:['$getServerVar[Prefix]','<@!$clientID>', '<@$clientID>'], //Discord Bot Prefix
 intents: "all" //Discord Intents
 })
